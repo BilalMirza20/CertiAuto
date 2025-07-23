@@ -14,13 +14,13 @@ LOGIN_URL = "https://lms.digitalkonect.com/Student/login/"
 CERTIFICATE_URL = "https://lms.digitalkonect.com/Student/stu_viewCertifcate/Vm0xMGFrMVhVWGhUYmtwT1ZsVndVbFpyVWtKUFVUMDk="
 
 # HTML element identifiers for the login form, dashboard, and certificate process
-EMAIL_FIELD_ID = "email"  # Replace with the actual ID or selector for the email input field
-PASSWORD_FIELD_ID = "password"  # Replace with the actual ID or selector for the password input field
-LOGIN_BUTTON_ID = "submit"  # Replace with the actual ID or selector for the login button
-PROFILE_BUTTON_ID = "navbarDropdown"  # Replace with the actual ID or selector for the profile menu button
-LOGOUT_LINK_CSS = "i.fa-sign-out"  # CSS selector for logout link
-DOWNLOAD_PNG_BUTTON_ID = "downloadPNG"  # ID for the download button
-PASSWORD = "hit-01"  # Fixed password for all logins
+EMAIL_FIELD_ID = "email"
+PASSWORD_FIELD_ID = "password"
+LOGIN_BUTTON_ID = "submit"
+PROFILE_BUTTON_ID = "navbarDropdown"
+LOGOUT_LINK_CSS = "i.fa-sign-out"
+DOWNLOAD_PNG_BUTTON_ID = "downloadPNG"
+PASSWORD = "hit-01"
 
 
 # Initialize the WebDriver (Chrome)
@@ -55,10 +55,10 @@ def attempt_login_download_logout(driver, email):
         password_field.clear()
         password_field.send_keys(PASSWORD)
 
-        # Click login button
+        # Click the login button
         login_button.click()
 
-        # Wait for dashboard to load
+        # Wait for the dashboard to load
         time.sleep(2)
 
         # Navigate to certificate URL
