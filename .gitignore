@@ -1,0 +1,61 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+*.egg-info/
+*.egg
+
+# PyCharm project files
+.idea/
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Windows-specific
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Compiled files
+*.exe
+*.dll
+*.obj
+*.o
+*.pyc
+
+# Output folders
+dist/
+build/
+*.spec
+
+# Test/Debug files
+*.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.tox/
+.pytest_cache/
+
+# VSCode settings (if ever used)
+.vscode/
+
+# Custom file to ignore (optional)
+chromedriver.exe
